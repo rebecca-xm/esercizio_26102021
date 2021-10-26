@@ -41,7 +41,7 @@ for(x of numbers) {
     parsedNumbers.push(parseInt(x));
 }
 
-let result;
+let totOperation;
 
 switch(numChoice) {
     case "addizione":

@@ -46,27 +46,27 @@ let result;
 switch(numChoice) {
     case "somma":
     case "+":
-        result = calculator(sum, parsedNumbers);
+        totOperation = calculator(sum, parsedNumbers);
         break;
     case "moltiplicazione":
     case "*":
-        result = calculator(mult, parsedNumbers);
+        totOperation = calculator(mult, parsedNumbers);
         break;
     case "divisione":
     case "/":
-        result = calculator(div, parsedNumbers);
+        totOperation = calculator(div, parsedNumbers);
         break;
     case "potenza":
     case "^":
-        result = calculator(pow, parsedNumbers);
+        totOperation = calculator(pow, parsedNumbers);
         break;
     case "radice quadrata":
-        result = calculator(sqrt, parsedNumbers);
+        totOperation = calculator(sqrt, parsedNumbers);
         break;
     case "radice cubica":
-            result = calculator(cbrt, parsedNumbers);
+        totOperation = calculator(cbrt, parsedNumbers);
         break;
     default:
-        result = "Errore: operazione non ammessa.";
+        totOperation = "Errore: operazione non ammessa.";
 }
-console.log(result);
+console.log(totOperation);

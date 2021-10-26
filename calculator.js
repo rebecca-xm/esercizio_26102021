@@ -31,7 +31,7 @@ function calculator(operation, numbers)
     return operation(...numbers);
 }
 
-let numChoice = prompt("Inserisci una delle seguenti operazioni/uno dei seguenti simboli matematici: somma (+), moltiplicazione (*), divisione (/), potenza (^), radice quadrata o radice cubica.");
+let numChoice = prompt("Inserisci una delle seguenti operazioni/uno dei seguenti simboli matematici: addizione (+), sottrazione (-), moltiplicazione (*), divisione (/), potenza (^), radice quadrata o radice cubica.");
 let nums = prompt("Inserisci i numeri separati da una virgola: ");
 
 const numbers = nums.split(",");
@@ -44,9 +44,13 @@ for(x of numbers) {
 let result;
 
 switch(numChoice) {
-    case "somma":
+    case "addizione":
     case "+":
         totOperation = calculator(sum, parsedNumbers);
+        break;
+case "sottrazione":
+case "-":
+        totOperation = calculator(sub, parsedNumbers);
         break;
     case "moltiplicazione":
     case "*":

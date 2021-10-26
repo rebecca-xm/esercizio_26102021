@@ -48,8 +48,8 @@ switch(numChoice) {
     case "+":
         totOperation = calculator(sum, parsedNumbers);
         break;
-case "sottrazione":
-case "-":
+    case "sottrazione":
+    case "-":
         totOperation = calculator(sub, parsedNumbers);
         break;
     case "moltiplicazione":
